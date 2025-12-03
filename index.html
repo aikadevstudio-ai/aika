@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIKA - AI Ürünleri ile Geleceği Şekillendiriyoruz</title>
+    <meta name="description" content="AIKA, yapay zeka teknolojileri ile yenilikçi çözümler üreten bir şirkettir. AIKoçum ile eğitimde devrim yaratıyoruz.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slide-in {
+            animation: slideIn 0.6s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-xl">auto_awesome</span>
+                    </div>
+                    <span class="text-xl font-bold gradient-text">AIKA</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#urunler" class="text-gray-700 hover:text-purple-600 transition">Ürünlerimiz</a>
+                    <a href="#hakkimizda" class="text-gray-700 hover:text-purple-600 transition">Hakkımızda</a>
+                    <a href="#iletisim" class="text-gray-700 hover:text-purple-600 transition">İletişim</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20 px-4 sm:px-6 lg:px-8 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    AI ile Geleceği Şekillendiriyoruz
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    AIKA olarak, yapay zeka teknolojileri ile yenilikçi çözümler üretiyor ve hayatı kolaylaştıran ürünler geliştiriyoruz. 4 arkadaşın ortak vizyonu ile kurulduk.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#urunler" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl">
+                        Ürünlerimizi Keşfet
+                    </a>
+                    <a href="#hakkimizda" class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition border-2 border-white/30">
+                        Hikayemiz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimizda" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Hakkımızda</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    AI ürünleri üretmeyi hedefleyen bir şirket olarak, teknoloji ve inovasyonu birleştiriyoruz
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="fade-in">
+                    <h3 class="text-3xl font-bold mb-6 text-gray-800">Misyonumuz</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        AIKA olarak, yapay zeka teknolojilerini kullanarak insanların hayatını kolaylaştıran, eğitimi dönüştüren ve iş süreçlerini optimize eden yenilikçi ürünler geliştirmeyi hedefliyoruz.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Her ürünümüzde, kullanıcı deneyimini ön planda tutarak, AI'ın gücünü erişilebilir ve kullanışlı çözümlere dönüştürüyoruz.
+                    </p>
+                </div>
+                <div class="slide-in">
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-3xl">
+                        <h3 class="text-3xl font-bold mb-6 text-gray-800">Vizyonumuz</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                            Türkiye'nin önde gelen AI ürün şirketi olmak ve dünya çapında tanınan, kullanılan AI çözümleri geliştirmek.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Teknoloji, eğitim, sağlık ve daha birçok alanda AI'ın dönüştürücü gücünü kullanarak, geleceğin dijital dünyasını bugünden inşa ediyoruz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-3xl text-center">
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Ekibimiz</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    AIKA, 4 arkadaşın ortak vizyonu ve tutkusu ile kuruldu. Her birimiz farklı uzmanlık alanlarımızla, şirketimizin başarısına katkıda bulunuyoruz.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="urunler" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Ürünlerimiz</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    AI teknolojisi ile geliştirdiğimiz yenilikçi çözümler
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AIKoçum Product Card -->
+                <a href="aikocum.html" class="product-card bg-white rounded-3xl p-8 shadow-xl cursor-pointer">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-white text-4xl">school</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">AIKoçum</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Kişisel AI eğitim koçun. Öğrencilere kişiselleştirilmiş öğrenme deneyimi sunan, AI destekli mobil uygulama.
+                    </p>
+                    <div class="flex items-center text-purple-600 font-semibold">
+                        <span>Detayları Gör</span>
+                        <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                    </div>
+                    <div class="mt-6">
+                        <img src="appPictures/image 1.png" alt="AIKoçum" class="w-full rounded-xl shadow-lg">
+                    </div>
+                </a>
+
+                <!-- Placeholder for future products -->
+                <div class="product-card bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-xl border-2 border-dashed border-gray-300">
+                    <div class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-gray-500 text-4xl">add</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-500">Yeni Ürün</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Yakında yeni ürünlerimizle karşınızda olacağız...
+                    </p>
+                </div>
+
+                <div class="product-card bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-xl border-2 border-dashed border-gray-300">
+                    <div class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-gray-500 text-4xl">add</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-500">Yeni Ürün</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Yakında yeni ürünlerimizle karşınızda olacağız...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Değerlerimiz</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Çalışma prensiplerimiz ve değerlerimiz
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-white text-3xl">lightbulb</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">İnovasyon</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Sürekli öğrenme ve gelişim anlayışı ile yenilikçi çözümler üretiyoruz.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-white text-3xl">people</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Kullanıcı Odaklılık</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Her ürünümüzde kullanıcı deneyimini ön planda tutuyoruz.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-50 to-orange-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-white text-3xl">verified</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Kalite</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Yüksek kalite standartlarını koruyarak güvenilir ürünler geliştiriyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Bizimle İletişime Geçin</h2>
+            <p class="text-xl mb-10 text-blue-100">
+                AI ürünleri hakkında daha fazla bilgi almak veya iş birliği yapmak isterseniz, bizimle iletişime geçebilirsiniz.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#iletisim" class="bg-white text-purple-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl">
+                    İletişime Geç
+                </a>
+                <a href="aikocum.html" class="bg-white/20 backdrop-blur-sm text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition border-2 border-white/30">
+                    AIKoçum'u Keşfet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="iletisim" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">İletişim</h2>
+                <p class="text-xl text-gray-600">
+                    Sorularınız, önerileriniz veya iş birliği teklifleriniz için bizimle iletişime geçebilirsiniz.
+                </p>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 shadow-xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Bize Ulaşın</h3>
+                        <p class="text-gray-600 mb-6">
+                            AIKA ekibi olarak, her zaman açık iletişim kanallarımızı koruyoruz.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-white">email</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">E-posta</p>
+                                    <p class="text-gray-600">info@aika.ai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Sosyal Medya</h3>
+                        <p class="text-gray-600 mb-6">
+                            Bizi sosyal medyada takip edin ve güncel haberlerimizden haberdar olun.
+                        </p>
+                        <div class="flex space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center cursor-pointer hover:scale-110 transition">
+                                <span class="material-symbols-outlined text-white">link</span>
+                            </div>
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center cursor-pointer hover:scale-110 transition">
+                                <span class="material-symbols-outlined text-white">link</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-xl">auto_awesome</span>
+                        </div>
+                        <span class="text-xl font-bold">AIKA</span>
+                    </div>
+                    <p class="text-gray-400">
+                        AI ürünleri ile geleceği şekillendiriyoruz.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Ürünler</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="aikocum.html" class="hover:text-white transition">AIKoçum</a></li>
+                        <li><a href="#urunler" class="hover:text-white transition">Tüm Ürünler</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Şirket</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#hakkimizda" class="hover:text-white transition">Hakkımızda</a></li>
+                        <li><a href="#iletisim" class="hover:text-white transition">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Yasal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Gizlilik Politikası</a></li>
+                        <li><a href="#" class="hover:text-white transition">Kullanım Şartları</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AIKA. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
